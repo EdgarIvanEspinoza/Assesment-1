@@ -81,11 +81,11 @@ main > section:first-child > p {
   line-height: 1rem;
 }
 
-main > section:first-child > div > button:first-of-type {
+.blueButton {
   background-color: rgb(37, 83, 233);
   color: white;
   border: 1px solid rgb(37, 83, 233);
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.2rem;
 }
 
@@ -98,19 +98,208 @@ main > section:first-child > div > button:nth-child(2) {
 }
 
 /*DIV LI*/
+.checkmarkAzul {
+  height: 1rem;
+  width: 1rem;
+  display: inline-block;
+}
+
 main > div > ul {
   display: flex;
   font-size: 0.7rem;
   border-top: 2px solid lightgrey;
-  border-bottom: 2px solid lightgrey;
-  padding: 0.4rem;
+  padding: 1rem;
   list-style-type: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.checkmarkAzul {
-  height: 20px;
-  width: 20px;
-  display: inline-block;
-  background-repeat: none;
-  background-image: url('../img/check.png');
+/* Last Report */
+main > section > article {
+  display: flex;
+  padding: 1.5rem;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid rgb(134, 134, 134);
+}
+main > section > article > img {
+  max-height: 100vmin;
+  max-width: 100%;
+  margin-bottom: 0.3rem;
+}
+
+main > section > article > h5 {
+  color: rgb(37, 83, 233);
+  size: 0.6rem;
+  margin: 0.5rem 0px;
+  font-weight: lighter;
+}
+main > section > article > h3 {
+  font-size: 1.3rem;
+  margin: 0.5rem 0px;
+}
+
+main > section > article > p {
+  font-size: 0.7rem;
+  margin: 0.5rem 0px;
+  color: rgb(134, 134, 134);
+  line-height: 1.3rem;
+}
+
+main > section > article > ul > li {
+  list-style-type: none;
+  font-size: 0.8rem;
+  color: rgb(134, 134, 134);
+  padding: 0.5rem 0px;
+}
+
+main > section > article > ul > li > span {
+  font-weight: 500;
+  padding-right: 15px;
+  color: black;
+}
+main > section > article > div {
+  margin: 1rem 0rem;
+}
+
+main > section > article > div > button {
+  margin-right: 0.6rem;
+}
+
+.greyButton {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid lightgray;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+}
+/* Past Reports */
+.pastReport {
+  background-color: rgb(240, 240, 240);
+}
+main > section > h2 {
+  padding: 3rem 1.3rem 0rem;
+}
+
+.pastReport > article {
+  border: 0px;
+}
+/* Plans */
+.plansSection > div {
+  color: white;
+  padding: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.plansSection > div:first-child {
+  background-color: rgb(37, 83, 233);
+}
+
+.plansSection h2 {
+  font-size: 2.5rem;
+}
+
+.plansSection p {
+  font-size: 0.8rem;
+  padding: 1rem 0px;
+  line-height: 1.3rem;
+}
+
+.plansSection h3 {
+  padding: 1rem 0px;
+}
+
+.plansSection li {
+  list-style-type: none;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.plansSection ul li:before {
+  content: '✓ ';
+}
+
+.plansSection button {
+  padding: 0.5rem;
+  align-self: flex-start;
+}
+
+.plansSection button:first-of-type {
+  background-color: white;
+  border: 0px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  margin: 0.4rem;
+}
+.plansSection button:last-of-type {
+  border: 0px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  margin: 0.4rem;
+  border: 1px solid white;
+  color: rgb(255, 255, 255);
+}
+
+.plansSection div:first-of-type button:first-of-type {
+  color: rgb(37, 83, 233);
+}
+
+.plansSection div:first-of-type button:last-of-type {
+  background-color: rgb(37, 83, 233);
+}
+
+.plansSection > div:last-child {
+  background-color: rgb(0, 0, 0);
+}
+
+.plansSection div:last-of-type button:first-of-type {
+  color: rgb(0, 0, 0);
+}
+.plansSection div:last-of-type button:last-of-type {
+  background-color: black;
+}
+
+/* Latest News*/
+
+/* Before Footer */
+.beforeFooter {
+  background-color: rgb(240, 240, 240);
+  padding: 0.8rem;
+}
+.beforeFooter > h3 {
+  margin: 1.5rem 0rem 0.5rem 0rem;
+}
+
+.beforeFooter > p {
+  font-size: 0.8rem;
+  padding: 1rem 0px;
+}
+
+.beforeFooter > button {
+  border: 0px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  margin: 0.4rem;
+  border: 1px solid lightgrey;
+}
+/* Footer */
+
+footer {
+  padding: 1rem 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer img {
+  max-height: 1rem;
+  max-width: 100%;
+  margin-right: 0.3rem;
+}
+
+footer p {
+  size: 0.6rem;
+  color: lightgrey;
 }
